@@ -1,6 +1,7 @@
+// require npm package for sequelize
 const Sequelize = require('sequelize');
 
-// Create a connection object
+// Create a connection object using Sequelize constructor
 const sequelize = new Sequelize(
   // Database name
   'library_db',
