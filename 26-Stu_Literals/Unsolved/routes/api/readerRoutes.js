@@ -8,6 +8,7 @@ router.get('/', async (req, res) => {
     const readerData = await Reader.findAll({
       include: [{ model: LibraryCard }, { model: Book }],
       // TODO: Add a sequelize literal to get a count of short books
+      
     });
     res.status(200).json(readerData);
   } catch (err) {
